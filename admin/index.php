@@ -177,7 +177,7 @@ $resulOrders = $stmtOrders->get_result()->num_rows;
                                     </div>
                                 </div>
                                 </div>
-                                <div class="card-category">March 25 - April 02</div>
+                                <div class="card-category">June 20 - October 31</div>
                             </div>
                             <div class="card-body pb-0">
                                 <div class="mb-4 mt-2">

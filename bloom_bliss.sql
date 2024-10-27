@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Generation Time: Jul 17, 2024 at 07:05 PM
+-- Generation Time: Oct 27, 2024 at 12:15 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.15
 
@@ -34,17 +34,6 @@ CREATE TABLE `cart` (
   `bouquet_id` int(5) NOT NULL,
   `total_price` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `cart`
---
-
-INSERT INTO `cart` (`cart_id`, `user_id`, `bouquet_qty`, `bouquet_id`, `total_price`) VALUES
-(32, 5, 2, 2, '1600000'),
-(60, 17, 1, 2, '800000'),
-(61, 2, 1, 2, '800000'),
-(62, 2, 1, 7, '810000'),
-(63, 2, 1, 8, '850000');
 
 -- --------------------------------------------------------
 
@@ -140,23 +129,24 @@ CREATE TABLE `tb_produk` (
   `bouquet_price` int(11) NOT NULL,
   `bouquet_ratings` double NOT NULL,
   `bouquet_category` enum('Wedding','Graduation','Birthday') NOT NULL,
-  `bouquet_code` varchar(10) NOT NULL
+  `bouquet_code` varchar(10) NOT NULL,
+  `bouquet_stock` int(5) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tb_produk`
 --
 
-INSERT INTO `tb_produk` (`bouquet_id`, `bouquet_name`, `bouquet_image`, `bouquet_description`, `bouquet_type`, `bouquet_price`, `bouquet_ratings`, `bouquet_category`, `bouquet_code`) VALUES
-(1, 'Pink Skies', 'wedding-bouquet1.png', 'Pink roses symbolize unconditional happiness.', 'Pink Roses', 729000, 4.9, 'Wedding', 'BQ001'),
-(2, 'Summer Sea', 'wedding-bouquet2.png', 'All the colors give the feeling of joy and excitement.', 'Many Flowers', 800000, 5, 'Wedding', 'BQ002'),
-(3, 'Spring Blossom', 'wedding-bouquet3.png', 'It symbolize purity, elegance, and new beginnings.', 'Sunflowers, Pink Roses', 750000, 4.8, 'Wedding', 'BQ003'),
-(4, 'Secret Garden', 'graduation-bouquet4.png', 'It symbolize a new journey to release our beautiful youth.', 'Many Flowers', 600000, 4.9, 'Graduation', 'BQ004'),
-(5, 'Blue Moon', 'graduation-bouquet5.png', 'The calming hue evokes a sense of relaxation.', 'Gentiana Trifloras', 500000, 4.8, 'Graduation', 'BQ005'),
-(6, 'Hydrangea Love', 'graduation-bouquet6.png', 'Associated with heartfelt emotions and gratitude.', 'Hydrangeas', 700000, 5, 'Graduation', 'BQ006'),
-(7, 'Valley of Lilies', 'birthday-bouquet7.png', 'Expressing sincere emotions & life\'s significant moments.', 'White Lilies, White Roses', 810000, 5, 'Birthday', 'BQ007'),
-(8, 'La Vie En Rose', 'birthday-bouquet8.png', 'Are the quintessential symbol of love and passion.', 'Red Roses', 850000, 4.9, 'Birthday', 'BQ008'),
-(9, 'In Bloom', 'birthday-bouquet9.png', 'Exudes an ethereal charm and understated elegance.', 'Gypsophilas', 775000, 4.8, 'Birthday', 'BQ009');
+INSERT INTO `tb_produk` (`bouquet_id`, `bouquet_name`, `bouquet_image`, `bouquet_description`, `bouquet_type`, `bouquet_price`, `bouquet_ratings`, `bouquet_category`, `bouquet_code`, `bouquet_stock`) VALUES
+(1, 'Pink Skies', 'wedding-bouquet1.png', 'Pink roses symbolize unconditional happiness.', 'Pink Roses', 729000, 4.9, 'Wedding', 'BQ001', 236),
+(2, 'Summer Sea', 'wedding-bouquet2.png', 'All the colors give the feeling of joy and excitement.', 'Many Flowers', 800000, 5, 'Wedding', 'BQ002', 470),
+(3, 'Spring Blossom', 'wedding-bouquet3.png', 'It symbolize purity, elegance, and new beginnings.', 'Sunflowers, Pink Roses', 750000, 4.8, 'Wedding', 'BQ003', 174),
+(4, 'Secret Garden', 'graduation-bouquet4.png', 'It symbolize a new journey to release our beautiful youth.', 'Many Flowers', 600000, 4.9, 'Graduation', 'BQ004', 352),
+(5, 'Blue Moon', 'graduation-bouquet5.png', 'The calming hue evokes a sense of relaxation.', 'Gentiana Trifloras', 500000, 4.8, 'Graduation', 'BQ005', 397),
+(6, 'Hydrangea Love', 'graduation-bouquet6.png', 'Associated with heartfelt emotions and gratitude.', 'Hydrangeas', 700000, 5, 'Graduation', 'BQ006', 210),
+(7, 'Valley of Lilies', 'birthday-bouquet7.png', 'Expressing sincere emotions & life\'s significant moments.', 'White Lilies, White Roses', 810000, 5, 'Birthday', 'BQ007', 418),
+(8, 'La Vie En Rose', 'birthday-bouquet8.png', 'Are the quintessential symbol of love and passion.', 'Red Roses', 850000, 4.9, 'Birthday', 'BQ008', 144),
+(9, 'In Bloom', 'birthday-bouquet9.png', 'Exudes an ethereal charm and understated elegance.', 'Gypsophilas', 775000, 4.8, 'Birthday', 'BQ009', 192);
 
 -- --------------------------------------------------------
 
@@ -183,8 +173,7 @@ INSERT INTO `tb_user` (`id_user`, `usn_user`, `nama_user`, `email_user`, `notelp
 (3, 'cacafay', 'caca', 'caca@gmail.com', '0857101988', '$2y$10$KKIG9M28pFmqctxwAwmjsuf1hKiNzHTYhwVyCyK8sibGxF7nHCEGu'),
 (4, 'saputr_', 'susan', 'susan@gmail.com', '0821232425', '$2y$10$vkEZHVNvxoDH7dutOoFtPOT/zJpYUTlrGz/9gk7h1NHxQ8x0McwP.'),
 (5, 'dindarhm', 'dinda ', 'dinda@gmail.com', '0815578304', '$2y$10$zSaazO85RizoOnAm9HWNxu9tOVn7kUNKVimDDKczePIyM46fHQ67.'),
-(16, 'cinta', 'cinta', 'cinta@gmail.com', '0101234567', '$2y$10$cVgoIdmuCjHWAyjx.BO5eeWNFeIlbdZbgoTlI.XG7TCxWi.7UXICa'),
-(17, 'jasminealnr', 'jasmine', 'jasmine@gmail.com', '0101234567', '$2y$10$HH8OD32t8I0vgfehTJBG3ur4GeF6cqB2/mDhYacnwhtv6b1Ss310G');
+(20, 'cinta', 'cinta', 'cinta@gmail.com', '0101234567', '$2y$10$5xq/ugJ2IEpK0iE7929As.Ir4YjJ9PHFB1VaLUVGXRlgV87OgFZQO');
 
 --
 -- Indexes for dumped tables
@@ -239,19 +228,19 @@ ALTER TABLE `tb_user`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `cart_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `cart_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `order_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `order_detail`
 --
 ALTER TABLE `order_detail`
-  MODIFY `id_orderdetail` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id_orderdetail` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `tb_admin`
@@ -263,13 +252,13 @@ ALTER TABLE `tb_admin`
 -- AUTO_INCREMENT for table `tb_produk`
 --
 ALTER TABLE `tb_produk`
-  MODIFY `bouquet_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `bouquet_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `id_user` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_user` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- Constraints for dumped tables
