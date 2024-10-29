@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $image_path = '../../assets/images/flowers/' . $bouquet_image;
                     move_uploaded_file($image_temp, $image_path);
 
-                    $query = "INSERT INTO tb_produk (bouquet_code, bouquet_name, bouquet_image, bouquet_description, bouquet_type, bouquet_price, bouquet_stock, bouquet_ratings, bouquet_category) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
+                    $query = "INSERT INTO tb_produk (bouquet_code, bouquet_name, bouquet_image, bouquet_description, bouquet_type, bouquet_price, bouquet_stock, bouquet_ratings, bouquet_category) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
                     $stmt = $conn->prepare($query);
                     $stmt->bind_param("sssssiids", $bouquet_code, $bouquet_name, $bouquet_image, $bouquet_description, $bouquet_type, $bouquet_price, $bouquet_stock, $bouquet_ratings, $bouquet_category);
                     $stmt->execute();

@@ -141,9 +141,25 @@ if (isset($_POST['action']) && $_POST['action'] == 'order') {
     // inserts into table orderDetail
     $orderDetailstmt = $conn->prepare('INSERT INTO order_detail(bouquet_id, qty ,order_id) VALUES(?, ?, ?)');
 
+    // update stock in table product
+    $updateStockProducctstmt = $conn->prepare("UPDATE tb_produk SET bouquet_stock = ? WHERE bouquet_id = ?");
+    // get current stock 
+    $getCurrentStockProductstmt = $conn->prepare("SELECT bouquet_stock FROM tb_produk WHERE bouquet_id = ?");
+
     foreach ($products as $productKey => $product) {
         $bouquet_id = $product['bouquet_id'];
-        $bouquet_qty = $product['bouquet_qty']; 
+        $bouquet_qty = $product['bouquet_qty'];
+
+        $getCurrentStockProductstmt->bind_param("i", $bouquet_id);
+        $getCurrentStockProductstmt->execute();
+        $currentStock=$getCurrentStockProductstmt->get_result()->fetch_assoc()['bouquet_stock'];
+
+        // operation 
+        $qtyStockAfter = $currentStock - $bouquet_qty;
+
+        $updateStockProducctstmt->bind_param("ii", $qtyStockAfter, $bouquet_id);
+        $updateStockProducctstmt->execute();
+
 
         $orderDetailstmt->bind_param("iii", $bouquet_id, $bouquet_qty, $order_id);
         if(!$orderDetailstmt->execute()){

@@ -181,6 +181,7 @@
     });
 </script>
 
+<script src="./chartAdmin.js"></script>
 </body>
 
 </html>
