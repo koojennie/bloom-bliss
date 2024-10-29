@@ -18,7 +18,7 @@ $spreadsheet = new Spreadsheet();
 $sheet = $spreadsheet->getActiveSheet();
 
 // Menambahkan judul pada sheet
-$sheet->setCellValue('A1', 'Laporan Penjualan Bloom & Bliss');
+$sheet->setCellValue('A1', 'Sales Report Bloom & Bliss');
 $sheet->setCellValue('A2', 'Print date :' . date('j F Y'));
 
 // Mengatur style untuk judul
@@ -146,9 +146,9 @@ while ($row = $result->fetch_assoc()) {
 }
 
 // Menambahkan total Qty dan Total Price di baris baru
-$sheet->setCellValue("A$rowIndex", 'Total Buket Terjual');
+$sheet->setCellValue("A$rowIndex", 'Total Bouquets Sold');
 $sheet->setCellValue("C$rowIndex", $totalQty);
-$sheet->setCellValue("D$rowIndex", 'Total Penjualan');
+$sheet->setCellValue("D$rowIndex", 'Total Sales');
 $sheet->setCellValue("F$rowIndex", $totalPrice);
 
 // Menggabungkan kolom untuk label total
@@ -184,7 +184,7 @@ foreach (range('A', 'G') as $columnID) {
 
 // Menyimpan file ke format Excel (.xls)
 $writer = new Xls($spreadsheet);
-$fileName = "Laporan Penjualan Bloom & Bliss " . date("Y-m-d") . ".xls";
+$fileName = "Sales Report Bloom & Bliss " . date("Y-m-d") . ".xls";
 header('Content-Type: application/vnd.ms-excel');
 header("Content-Disposition: attachment; filename=\"$fileName\"");
 $writer->save("php://output");

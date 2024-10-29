@@ -5,43 +5,43 @@ $monthName;
 
 switch ($month) {
   case 12:
-    $monthName = "DESEMBER";
+    $monthName = "December";
     break;
   case 11:
-    $monthName = "NOVEMBER";
+    $monthName = "November";
     break;
   case 10:
-    $monthName = "OKTOBER";
+    $monthName = "October";
     break;
   case 9:
-    $monthName = "SEPTEMBER";
+    $monthName = "September";
     break;
   case 8:
-    $monthName = "AGUSTUS";
+    $monthName = "August";
     break;
   case 7:
-    $monthName = "JULI";
+    $monthName = "July";
     break;
   case 6:
-    $monthName = "JUNI";
+    $monthName = "June";
     break;
   case 5:
-    $monthName = "MEI";
+    $monthName = "May";
     break;
   case 4:
-    $monthName = "APRIL";
+    $monthName = "April";
     break;
   case 3:
-    $monthName = "MARET";
+    $monthName = "March";
     break;
   case 2:
-    $monthName = "FEBRUARI";
+    $monthName = "February";
     break;
   case 1:
-    $monthName = "JANUARI";
+    $monthName = "January";
     break;
   default:
-    $monthName = "BULAN TIDAK DIKENALI";
+    $monthName = "Month Not Found";
     break;
 }
 
@@ -51,7 +51,7 @@ switch ($month) {
 <html>
 
 <head>
-  <title>Laporan Penjualan Per Bulan</title>
+  <title>Sales Report per Month</title>
   <link href="../../assets/admin/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -64,8 +64,8 @@ switch ($month) {
   <div class="row">
     <div class="text-center">
       <img src="../../assets/images/header-report.png" alt="logo" width="300">
-      <h3>Laporan Bulanan</h3>
-      <h5>BULAN <?= $monthName ?> TAHUN <?= $year ?></h5>
+      <h3>Sales Report per Month</h3>
+      <h5>Month <?= $monthName ?> Year <?= $year ?></h5>
       <br/>
       <table class="table table-bordered table-striped table-hover">
         <tbody>

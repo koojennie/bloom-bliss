@@ -7,8 +7,8 @@
     <div class="page-inner">
         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
             <div>
-                <h3 class="fw-bold mb-3">Produk</h3>
-                <h6 class="op-7 mb-2">Manajemen produk Bloom & Bliss</h6>
+                <h3 class="fw-bold mb-3">Products</h3>
+                <h6 class="op-7 mb-2">Product Management Bloom & Bliss</h6>
             </div>
         </div>
 
@@ -16,9 +16,9 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Tabel Produk</h4>
+                        <h4 class="card-title">Product Table</h4>
                         <div class="d-flex justify-content-end">
-                            <a href="addProductPage.php" class="btn btn-primary">Tambah Produk</a>
+                            <a href="addProductPage.php" class="btn btn-primary">Add Product</a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -26,8 +26,8 @@
                             <table id="katalog-datatables" class="display table table-striped table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Bouquet Code</th>
-                                        <th>Bouquet Name</th>
+                                        <th>Code</th>
+                                        <th>Name</th>
                                         <th>Price</th>
                                         <th>Stock</th>
                                         <!-- <th>Quantity</th> -->

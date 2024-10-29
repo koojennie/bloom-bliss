@@ -7,19 +7,19 @@
   <div class="page-inner">
     <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
       <div>
-        <h3 class="fw-bold mb-3">Order</h3>
-        <h6 class="op-7 mb-2">Manajemen order Bloom & Bliss</h6>
+        <h3 class="fw-bold mb-3">Orders</h3>
+        <h6 class="op-7 mb-2">Order Management Bloom & Bliss</h6>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
-            <h4 class="card-title">Tabel Order</h4>
+            <h4 class="card-title">Order Table</h4>
             <div class="d-flex justify-content-end">
-              <a href="report/OrderReportAll.php" target="_blank" class="btn btn-info">Cetak Semua Data Order</a>
+              <a href="report/OrderReportAll.php" target="_blank" class="btn btn-info">Print Orders</a>
               <button class="btn btn-primary ms-3" data-bs-toggle="modal"
-                data-bs-target="#cetak_perbulan_order">Cetak Perbulan</button>
+                data-bs-target="#cetak_perbulan_order">Print per Month</button>
             </div>
           </div>
           <div class="card-body">

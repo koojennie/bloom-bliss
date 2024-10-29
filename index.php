@@ -197,10 +197,6 @@ session_start();
                                                     <p>Type</p>
                                                     <b>Pink Roses</b>
                                                 </li>
-                                                <li class="stock">
-                                                    <p>Stock</p>
-                                                    <b>1</b>
-                                                </li>
                                             </ul>
                                         </div>
                                         <div class="dist-bottom-row">
@@ -238,10 +234,6 @@ session_start();
                                                     <p>Type</p>
                                                     <b>Many Flowers</b>
                                                 </li>
-                                                <li class="stock">
-                                                    <p>Stock</p>
-                                                    <b>1</b>
-                                                </li>
                                             </ul>
                                         </div>
                                         <div class="dist-bottom-row">
@@ -277,10 +269,6 @@ session_start();
                                                 <li>
                                                     <p>Type</p>
                                                     <b>Sunflowers, Pink Roses</b>
-                                                </li>
-                                                <li class="stock">
-                                                    <p>Stock</p>
-                                                    <b>1</b>
                                                 </li>
                                             </ul>
                                         </div>
@@ -319,10 +307,6 @@ session_start();
                                                     <p>Type</p>
                                                     <b>Many Flowers</b>
                                                 </li>
-                                                <li class="stock">
-                                                    <p>Stock</p>
-                                                    <b>1</b>
-                                                </li>
                                             </ul>
                                         </div>
                                         <div class="dist-bottom-row">
@@ -359,10 +343,6 @@ session_start();
                                                 <li>
                                                     <p>Type</p>
                                                     <b>Gentiana Trifloras</b>
-                                                </li>
-                                                <li class="stock">
-                                                    <p>Stock</p>
-                                                    <b>1</b>
                                                 </li>
                                             </ul>
                                         </div>
@@ -401,10 +381,6 @@ session_start();
                                                     <p>Type</p>
                                                     <b>Hydrangeas</b>
                                                 </li>
-                                                <li class="stock">
-                                                    <p>Stock</p>
-                                                    <b>1</b>
-                                                </li>
                                             </ul>
                                         </div>
                                         <div class="dist-bottom-row">
@@ -441,10 +417,6 @@ session_start();
                                                 <li>
                                                     <p>Type</p>
                                                     <b>White Lilies, White Roses</b>
-                                                </li>
-                                                <li class="stock">
-                                                    <p>Stock</p>
-                                                    <b>1</b>
                                                 </li>
                                             </ul>
                                         </div>
@@ -483,10 +455,6 @@ session_start();
                                                     <p>Type</p>
                                                     <b>Red Roses</b>
                                                 </li>
-                                                <li class="stock">
-                                                    <p>Stock</p>
-                                                    <b>1</b>
-                                                </li>
                                             </ul>
                                         </div>
                                         <div class="dist-bottom-row">
@@ -523,10 +491,6 @@ session_start();
                                                 <li>
                                                     <p>Type</p>
                                                     <b>Gypsophilas</b>
-                                                </li>
-                                                <li class="stock">
-                                                    <p>Stock</p>
-                                                    <b>1</b>
                                                 </li>
                                             </ul>
                                         </div>

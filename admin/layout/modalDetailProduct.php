@@ -3,7 +3,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="ModalLabelDetail<?= $row['bouquet_name'] ?>">Detail Produk
+        <h5 class="modal-title" id="ModalLabelDetail<?= $row['bouquet_name'] ?>">Product Detail
           <strong><?= $row['bouquet_name'] ?></strong>
         </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">

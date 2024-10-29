@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Laporan Penjualan</title>
+    <title>Sales Report</title>
     <link href="../../assets/admin/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -15,7 +15,7 @@
     <div class="row">
         <div class="text-center">
             <img src="../../assets/images/header-report.png" alt="logo" width="300">
-            <h2>Laporan Penjualan</h2>
+            <h2>Sales Report</h2>
             <br/>
             <table class="table table-bordered table-striped table-hover">
                 <tbody>

@@ -4,17 +4,17 @@
     <div class="page-inner">
         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
             <div>
-                <h3 class="fw-bold mb-3">User</h3>
-                <h6 class="op-7 mb-2">Manajemen user Bloom & Bliss</h6>
+                <h3 class="fw-bold mb-3">Users</h3>
+                <h6 class="op-7 mb-2">User Management Bloom & Bliss</h6>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Tabel User</h4>
+                        <h4 class="card-title">User Table</h4>
                         <div class="d-flex justify-content-end">
-                            <a href="addUserPage.php" class="btn btn-primary">Tambah User</a>
+                            <a href="addUserPage.php" class="btn btn-primary">Add User</a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -24,9 +24,9 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Username</th>
-                                        <th>Nama User</th>
-                                        <th>Email User</th>
-                                        <th>No Handphone</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Phone Number</th>
                                         <th>action</th>
                                     </tr>
                                 </thead>

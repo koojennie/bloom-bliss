@@ -92,25 +92,25 @@ if(!isset($_SESSION['usn_user']) == 'admin'){
                         <li class="nav-item <?= $page == 'user.php' ? 'active' : '' ?>">
                             <a href="user.php">
                                 <i class="fa-solid fa-users"></i>
-                                <p>User</p>
+                                <p>Users</p>
                             </a>
                         </li>
                         <li class="nav-item <?= $page == 'product.php' ? 'active' : '' ?>">
                             <a  href="product.php">
                                 <i class="fa-solid fa-fan"></i>
-                                <p>Produk</p>
+                                <p>Products</p>
                             </a>
                         </li>
                         <li class="nav-item <?= $page == 'order.php' ? 'active' : '' ?>">
                             <a  href="order.php">
                                 <i class="fa-solid fa-store"></i>
-                                <p>Order</p>
+                                <p>Orders</p>
                             </a>
                         </li>
                         <li class="nav-item <?= $page == 'report.php' ? 'active' : '' ?>">
                             <a  href="report.php">
                                 <i class="fa-solid fa-file-invoice"></i>
-                                <p>Laporan</p>
+                                <p>Report</p>
                             </a>
                         </li>
                     </ul>

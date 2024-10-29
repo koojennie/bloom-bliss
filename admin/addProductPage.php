@@ -8,7 +8,7 @@ include ('layout/header.php');
         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
             <div>
                 <h3 class="fw-bold mb-3">Add Product</h3>
-                <h6 class="op-7 mb-2">Manajemen produk Bloom & Bliss</h6>
+                <h6 class="op-7 mb-2">Product Management Bloom & Bliss</h6>
             </div>
         </div>
 

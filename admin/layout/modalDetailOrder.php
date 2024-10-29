@@ -3,7 +3,7 @@
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="ModalLabelDetail<?= $row['order_id'] ?>">Detail Order
+        <h5 class="modal-title" id="ModalLabelDetail<?= $row['order_id'] ?>">Order Detail
           <strong><?= $row['order_id'] ?></strong>
         </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -135,7 +135,7 @@
                   <div class="d-flex align-items-center">
                     <div>
                       <h6 class="mb-1">
-                        <b>Metode Payment</b>
+                        <b>Payment Method</b>
                       </h6>
                       <h6>
                         <?= $row['pmode'] ?>
@@ -149,7 +149,7 @@
                   <div class="d-flex align-items-center">
                     <div>
                       <h6 class="mb-1">
-                        <b>Order Date </b>
+                        <b>Order Date</b>
                       </h6>
                       <h6>
                         <?php
@@ -206,7 +206,7 @@
           </div>
         </div>
         <div class="modal-footer">
-        <a href="report/orderReportPerOrder.php?order_id=<?= $row['order_id'] ?>" class="btn btn-info btn-round"><i class="fas fa-print"></i> Cetak</a>
+        <a href="report/orderReportPerOrder.php?order_id=<?= $row['order_id'] ?>" class="btn btn-info btn-round"><i class="fas fa-print"></i>Print</a>
         </div>
       </div>
     </div>

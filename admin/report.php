@@ -7,20 +7,19 @@
   <div class="page-inner">
     <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
       <div>
-        <h3 class="fw-bold mb-3">Laporan Penjualan</h3>
-        <h6 class="op-7 mb-2">Manajemen laporan Bloom & Bliss</h6>
+        <h3 class="fw-bold mb-3">Sales Report</h3>
+        <h6 class="op-7 mb-2">Sales Report Bloom & Bliss</h6>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
-            <h4 class="card-title">Tabel Laporan</h4>
+            <h4 class="card-title">Sales Table</h4>
             <div class="d-flex justify-content-end">
-              <a href="report/laporanReportAll.php" target="_blank" class="btn btn-info">Cetak Semua Data Laporan</a>
-              <button class="btn btn-primary mx-3" data-bs-toggle="modal" data-bs-target="#cetak_perbulan_laporan">Cetak
-                Perbulan</button>
-              <a href="action/exportIntoExcel.php" class="btn btn-success" target="_blank">Cetak Excel</a>
+              <a href="report/laporanReportAll.php" target="_blank" class="btn btn-info">Print Report</a>
+              <button class="btn btn-primary mx-3" data-bs-toggle="modal" data-bs-target="#cetak_perbulan_laporan">Print per Month</button>
+              <a href="action/exportIntoExcel.php" class="btn btn-success" target="_blank">Print Excel</a>
             </div>
           </div>
           <div class="card-body">
@@ -30,9 +29,9 @@
                   <tr>
                     <td><b>NO</b></td>
                     <th>Order Date</th>
-                    <th>Product Code</th>
-                    <th>Product Image</th>
-                    <th>Product</th>
+                    <th>Code</th>
+                    <th>Image</th>
+                    <th>Name</th>
                     <th>Price</th>
                     <th>Qty</th>
                     <th>Total Price</th>
