@@ -87,7 +87,7 @@ $user = getUserById($id);
                                             <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" value="<?= $user['email_user'] ?>" required/>
                                         </div>
                                         <div class="form-group mt-3">
-                                            <label for="no_telp">No Telp</label>
+                                            <label for="no_telp">Phone Number</label>
                                             <input type="text" class="form-control" id="no_telp" name="no_telp" placeholder="Enter No Telp" value="<?= $user['notelp_user'] ?>" required/>
                                         </div>
                                         <div class="form-group mt-3">
