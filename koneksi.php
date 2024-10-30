@@ -1,7 +1,7 @@
 <?php
 $server = "rm-d9jkah62jypc32943vo.mysql.ap-southeast-5.rds.aliyuncs.com:3306";
-$user = "root";
-$pass = "270819@Alia";
+$user = "rds_admin";
+$pass = "270804@Alia";
 $database = "bloom_bliss";
 
 // membuat variabel untuk koneksi
